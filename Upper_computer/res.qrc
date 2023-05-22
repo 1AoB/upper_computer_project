@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/addn.png</file>
+        <file>res/background.png</file>
+        <file>res/bg3.png</file>
+        <file>res/green.png</file>
+        <file>res/needle_shadow.png</file>
+        <file>res/normal.png</file>
+        <file>res/normal0.png</file>
+        <file>res/overlay.png</file>
+        <file>res/red.png</file>
+        <file>res/redn.png</file>
+        <file>res/warning.png</file>
+        <file>res/bg4.png</file>
+        <file>res/needle.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>864</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QProgressBar {
+	border:0.1px solid grey;
+	background-color:rgb(74,75,83);
+}
+QProgressBar::chunk {
+	background-color:rgb(0,185,84);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_bg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1200</width>
+      <height>864</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/res/bg4.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>72</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>主机温度</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>398</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>主轴转速</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>副轴转速</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1029</x>
+      <y>230</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>主机时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>1号仓压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>410</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>2号仓压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>500</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>3号仓压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>588</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>4号仓压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>676</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>5号仓压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>763</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>1号工作缸油量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>764</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>2号工作缸油量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>765</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>3号工作缸油量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>992</x>
+      <y>343</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>机械臂压力</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_wen_du">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>268</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_fu_zhou">
+    <property name="geometry">
+     <rect>
+      <x>714</x>
+      <y>268</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_zhu_zhou">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>268</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_gang_1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>800</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 L</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_gang_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>800</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 L</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_gang_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>800</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 L</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chang_1">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>327</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chang_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>416</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chang_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>505</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chang_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>594</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_chang_5">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>682</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ji_xie_bi">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>350</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;新宋体&quot;;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>000 Pa</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_chang_1">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>357</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_chang_2">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>445</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_chang_3">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>534</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_chang_4">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>623</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_chang_5">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>711</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_ji_xie_bi">
+    <property name="geometry">
+     <rect>
+      <x>965</x>
+      <y>381</y>
+      <width>208</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>500</number>
+    </property>
+    <property name="maximum">
+     <number>1200</number>
+    </property>
+    <property name="value">
+     <number>800</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_time">
+    <property name="geometry">
+     <rect>
+      <x>978</x>
+      <y>272</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+	color:white
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_state">
+    <property name="geometry">
+     <rect>
+      <x>407</x>
+      <y>96</y>
+      <width>421</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/res/normal.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>700</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sub">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>750</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>958</x>
+      <y>479</y>
+      <width>211</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0,0,0,0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>981</x>
+      <y>502</y>
+      <width>148</width>
+      <height>105</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/res/overlay.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

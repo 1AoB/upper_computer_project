@@ -1,0 +1,10 @@
+main.o
+mainwindow.o
+needle.o
+receivepack.o
+sendpack.o
+qrc_res.o
+moc_mainwindow.o
+moc_needle.o
+moc_receivepack.o
+moc_sendpack.o
